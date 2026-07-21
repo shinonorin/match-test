@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>相性診断</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>相性診断</h1>
+      <!--<input type="text" placeholder="あなたの名前">input type="text"文字入力欄-->
+      <div class="question">
+        <p>Q1.休日はどう過ごしたい？</p>
+      </div>
+      <div class="choice">
+        <input type="radio" id="holiday1" name="q1" value="baru" />
+        <label for="holiday1"
+          >前もって予定を決めて、充実した一日を過ごしたい
+        </label>
+        <!--label入力部分の説明文-->
+      </div>
+      <!--<br />改行-->
+      <div class="choice">
+        <input type="radio" id="holiday2" name="q1" value="nalu" />
+        <label for="holiday2">気の向くままに、のんびりお散歩したい</label>
+      </div>
+      <div class="choice">
+        <input type="radio" id="holiday3" name="q1" value="yuyu" />
+        <label for="holiday3">家でゆっくり、好きなことをして過ごしたい</label>
+      </div>
+      <div class="question">
+        <p>Q2.初対面の人と一緒にいる時、どんな人だと安心する？</p>
+      </div>
+      <div class="choice">
+        <input type="radio" id="first-meet1" name="q2" value="yuyu" />
+        <label for="first-meet1">無理に話さず、そっと寄り添ってくれる人 </label>
+      </div>
+      <div class="choice">
+        <input type="radio" id="first-meet2" name="q2" value="nalu" />
+        <label for="first-meet2">自然な距離感で接してくれる人</label>
+      </div>
+      <div class="choice">
+        <input type="radio" id="first-meet3" name="q2" value="baru" />
+        <label for="first-meet3">話題を振って場を盛り上げてくれる人</label>
+      </div>
+      <div class="question">
+        <p>Q3.欲しいものを見つけた時は？</p>
+      </div>
+      <div class="choice">
+        <input type="radio" id="shopping1" name="q3" value="baru" />
+        <label for="shopping1">買うと決めたら迷わず手に入れる</label>
+      </div>
+      <div class="choice">
+        <input type="radio" id="shopping2" name="q3" value="yuyu" />
+        <label for="shopping2">しばらく考えて、それでも欲しければ買う</label>
+      </div>
+      <div class="choice">
+        <input type="radio" id="shopping3" name="q3" value="nalu" />
+        <label for="shopping3">本当に必要か考えて買う</label>
+      </div>
+      <div class="question">
+        <p>Q4.疲れた時に一番したいことは？</p>
+      </div>
+      <div class="choice">
+        <input type="radio" id="refresh1" name="q4" value="yuyu" />
+        <label for="refresh1">とにかく家でゆっくり休みたい</label>
+      </div>
+      <div class="choice">
+        <input type="radio" id="refresh2" name="q4" value="baru" />
+        <label for="refresh2">
+          美味しいものを食べたりして、誰かと楽しい時間を過ごしたい
+        </label>
+      </div>
+      <div class="choice">
+        <input type="radio" id="refresh3" name="q4" value="nalu" />
+        <label for="refresh3">ゆっくりお風呂に入ってリフレッシュしたい</label>
+      </div>
+      <div class="question">
+        <p>Q5.一緒に食事をする相手に求めることは？</p>
+      </div>
+      <div class="choice">
+        <input type="radio" id="dining1" name="q5" value="nalu" />
+        <label for="dining1">
+          好き嫌いを気にせず、自分のペースで食事ができること
+        </label>
+      </div>
+      <div class="choice">
+        <input type="radio" id="dining2" name="q5" value="yuyu" />
+        <label for="dining2"> たくさん食べて、美味しさを共有できること </label>
+      </div>
+      <div class="choice">
+        <input type="radio" id="dining3" name="q5" value="baru" />
+        <label for="dining3"> 料理や食べ物の話で盛り上がれること </label>
+      </div>
+      <div class="question">
+        <p>Q6.仲の良い人との連絡はどんな感じが理想？</p>
+      </div>
+      <div class="choice">
+        <input type="radio" id="contact1" name="q6" value="baru" />
+        <label for="contact1"> 必要な時にだけ連絡を取り合えれば十分 </label>
+      </div>
+      <div class="choice">
+        <input type="radio" id="contact2" name="q6" value="nalu-yuyu" />
+        <label for="contact2"> たまにはくだらないことを送って楽しみたい </label>
+      </div>
+      <div class="choice">
+        <input type="radio" id="contact3" name="q6" value="none" />
+        <label for="contact3"> 頻繁に連絡を取り合いたい </label>
+      </div>
+      <div class="question">
+        <p>Q7.仲良くなるならどんな女の子がいい？</p>
+      </div>
+      <div class="choice">
+        <input type="radio" id="friend1" name="q7" value="nalu" />
+        <label for="friend1"> どんな話も真剣に聞いてくれる子 </label>
+      </div>
+      <div class="choice">
+        <input type="radio" id="friend2" name="q7" value="baru-yuyu" />
+        <label for="friend2">
+          自分の意見がはっきりしている、サバサバしている子
+        </label>
+      </div>
+      <div class="choice">
+        <input type="radio" id="friend3" name="q7" value="none" />
+        <label for="friend3"> いつでも一緒にいたいと思ってくれる子 </label>
+      </div>
+      <div class="question">
+        <p>Q8.配信を見る時に一番求めるものは？</p>
+      </div>
+      <div class="choice">
+        <input type="radio" id="stream1" name="q8" value="yuyu" />
+        <label for="stream1">
+          配信者と一緒に過ごしているような楽しさがほしい
+        </label>
+      </div>
+      <div class="choice">
+        <input type="radio" id="stream2" name="q8" value="baru" />
+        <label for="stream2"> 配信者とのやり取りや会話を楽しみたい</label>
+      </div>
+      <div class="choice">
+        <input type="radio" id="stream3" name="q8" value="nalu" />
+        <label for="stream3">
+          一生懸命な姿を見て、前向きな気持ちになりたい
+        </label>
+      </div>
+      <div class="question">
+        <p>Q9.配信で一番好きな瞬間は？</p>
+      </div>
+      <div class="choice">
+        <input type="radio" id="stream-moment1" name="q9" value="nalu" />
+        <label for="stream-moment1">
+          配信者が目標やチャレンジを達成した瞬間
+        </label>
+      </div>
+      <div class="choice">
+        <input type="radio" id="stream-moment2" name="q9" value="baru" />
+        <label for="stream-moment2"> コメントを拾ってもらえた瞬間</label>
+      </div>
+      <div class="choice">
+        <input type="radio" id="stream-moment3" name="q9" value="yuyu" />
+        <label for="stream-moment3"> 意外な一面やギャップを知れた瞬間 </label>
+      </div>
+      <div class="question">
+        <p>Q10.推しに惹かれるポイントは？</p>
+      </div>
+      <div class="choice">
+        <input type="radio" id="appeal1" name="q10" value="baru" />
+        <label for="appeal1">
+          ファンとの距離が近く、一緒に楽しませてくれるところ
+        </label>
+      </div>
+      <div class="choice">
+        <input type="radio" id="appeal2" name="q10" value="nalu-yuyu" />
+        <label for="appeal2">
+          飾らず自然体で、ありのままの姿を見せてくれるところ</label
+        >
+      </div>
+      <div class="choice">
+        <input type="radio" id="appeal3" name="q10" value="none" />
+        <label for="appeal3"> 作りこまれた世界観やキャラクター設定 </label>
+      </div>
+      <button id="result-button">診断する</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
